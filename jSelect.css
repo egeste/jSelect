@@ -1,0 +1,199 @@
+.jSelect {
+  color: #000;
+  text-decoration: none;
+}
+
+.jSelect.rounded,
+.jSelect .rounded {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.jSelect.rounded.bottom,
+.jSelect .rounded.bottom {
+  border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+}
+
+.jSelect.rounded.top,
+.jSelect .rounded.top {
+  border-radius: 4px 4px 0 0;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px 4px 0 0;
+}
+
+.jSelect.rounded.right,
+.jSelect .rounded.right {
+  border-radius: 0 4px 4px 0;
+  -moz-border-radius: 0 4px 4px 0;
+  -webkit-border-radius: 0 4px 4px 0;
+}
+
+.jSelect.icon,
+.jSelect .icon {
+  background-size: 12px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.jSelect.icon.up,
+.jSelect .icon.up {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF9JREFUeNpi/P//PwMlgImBQjAMDGAABSIMowEOIHbEpx6EWXCYywrE4UCsCMTMQLyHFC+AxEKgmkHABoqJNsATiNXRxFyAWJ8YA5yA2BSHZf5YDGZgHE2Jg8AAgAADAH1hH0gGqnRPAAAAAElFTkSuQmCC');
+}
+
+.jSelect.icon.down,
+.jSelect .icon.down {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGVJREFUeNpi/P//PwMlgImBQjBqAAMDCzKHkZFRB0gF4TD4LxAvAcbafXwuuALE27Fo/gfEG4D4PjFeOA3EB9HEQIZeJiUM9kMNAoEjSGxMAEqJMIzFcAN86kGYcTQpU24AQIABAHNQK33iuQK9AAAAAElFTkSuQmCC');
+}
+
+.jSelect.icon.x,
+.jSelect .icon.x {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKlJREFUeNpi/P//PwMlgImBQjDwBrAgcxgZGUFUKogJxCuA+BNUSgiII0F8YJgtxucCEJ8HiKWAOBGI+aCaE4BYFMpHAYzIsQB1gSCS5k9Ihr4D4gVA9Z8IGQAzJBmqEQQ+APE8qBeICkRmdJdCMVGxIALEcVDb30O9wQ8NB35CBoD4sVD/vwHi+VD8EeqtGEIG/IMqfgoKMKjt76Hsl1A27lgYoXkBIMAAbjEv4zcZziQAAAAASUVORK5CYII=');
+}
+
+.jSelect.icon.x:hover,
+.jSelect .icon.x:hover {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALhJREFUeNpi/P//PwMlgImBQjDwBjCAwgCGoaAXiPuBWBhJmSQQTwPiZmT1IMyExUWCQKwCxJ1QQ0Ca24FYFs1QMGBEjgVGRkYQJY6k+Q0QM0MNfQ7ElUD1bwkZADOkB4gFoPxXQFwGxG/Rox1XILKAggfZIlxqsQlKA3Er1NkvQLYCsSg0HEQJhQHIwDlQhU+BuBrqGpjmx0D1Wfhc8A+IXwPxLVCAQW1/CWU/gLoItwtGaF4ACDAA3SlHilInBngAAAAASUVORK5CYII=');
+}
+
+.jSelect.icon.search,
+.jSelect .icon.search {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAN9JREFUeNpi/P//PwMlgImBQsCCzGFkZAQZ6ATEZkAsDcRPgPg0EO8DuvQfNgMYYV6Aai4E4qdAfBxKywCxBRBLAvFErIaADIAa4gbEETA+MgaJg+SxySGHgT0Q78Hh1T1QebyBKADEH3AY8AEqj9cAnIrwGY5swClszgQGLohyBMmD2MgY3YAdQKwOlAgDYkmoZhAdBsRGQHwNbzRCNYDShScQG0Oj7jkQn4VqTgHimUD8ADkGGbBFDVoUwoACELdDabIMwDCEHAOQDREByTMSyo2w0MYWrUQZQAgABBgAZa6s/vDoSo8AAAAASUVORK5CYII=');
+}
+
+.jSelect.container {
+  z-index: 1;
+  cursor: text;
+  display: block;
+  background: #fff;
+  background: -o-linear-gradient(top, #fff 50%, #eee 100%);
+  background: -ms-linear-gradient(top, #fff 50%, #eee 100%);
+  background: -moz-linear-gradient(top, #fff 50%, #eee 100%);
+  background: linear-gradient(to bottom, #fff 50%, #eee 100%);
+  background: -webkit-linear-gradient(top, #fff 50%, #eee 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(100%, #eee));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#eee',GradientType=0 );
+}
+
+.jSelect.container,
+.jSelect.options {
+  position: relative;
+  border: 1px solid #aaa;
+  background-color: #fff;
+}
+
+.jSelect.container > span {
+  margin: 2px 5px;
+}
+
+.jSelect.container > span.placeholder {
+  color: #999;
+}
+
+.jSelect.container > b {
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 100%;
+  cursor: pointer;
+  background: #fff;
+  position: absolute;
+  border-left: 1px solid #aaa;
+  background: -o-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+  background: -webkit-linear-gradient(top, #fff 0%, #ddd 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #ddd));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ddd',GradientType=0 );
+}
+
+.jSelect.container > abbr {
+  top: 0;
+  right: 16px;
+  width: 16px;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+}
+
+.jSelect.container > b > abbr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.jSelect.container.open {
+  cursor: default;
+  background: #eee;
+  background: -o-linear-gradient(top, #eee 0%, #fff 100%);
+  background: -ms-linear-gradient(top, #eee 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #eee 0%, #fff 100%);
+  background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+  background: -webkit-linear-gradient(top, #eee 0%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eee), color-stop(100%, #fff));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eee', endColorstr='#fff',GradientType=0 );
+}
+
+.jSelect.container.open > b {
+  background: none;
+  border-left-style: none;
+}
+
+.jSelect.options {
+  padding: 0;
+  z-index: 2;
+  display: none;
+  margin: -1px 0 0;
+  list-style-type: none;
+  border-top-style: none;
+}
+
+.jSelect.options.open {
+  display: block;
+}
+
+.jSelect.options.aligned {
+  position: absolute;
+}
+
+.jSelect.options li {
+  color: #000;
+  margin: 3px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.jSelect.options li.disabled {
+  color: #999;
+}
+
+.jSelect.options li:hover {
+  color: #fff;
+  background: #499bea;
+  background: -o-linear-gradient(top, #499bea 0%, #207ce5 100%);
+  background: -ms-linear-gradient(top, #499bea 0%, #207ce5 100%);
+  background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%);
+  background: linear-gradient(to bottom, #499bea 0%, #207ce5 100%);
+  background: -webkit-linear-gradient(top, #499bea 0%, #207ce5 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #499bea), color-stop(100%, #207ce5));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
+}
+
+.jSelect.options li.group {
+  padding: 5;
+  color: #666;
+  cursor: default;
+}
+
+.jSelect.options li.group:hover {
+  color: #333;
+  background: none;
+}
+
+.jSelect.options li .jSelect.options {
+  border: 1px solid #fff;
+}
