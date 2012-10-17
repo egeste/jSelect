@@ -8,7 +8,7 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js"></script>
     <script type="text/javascript" src="jSelect.js"></script>
-    <script>$(function() { $('select').jSelect(null, { width: 300 })})</script>
+    <script>$(function() { $('select').jSelect({ width: 300 })})</script>
   </head>
   <body>
     <select>
@@ -24,13 +24,73 @@
       <option value="3">Three</option>
     </select>
     <hr />
-    <select multiple='multiple'>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+    <select>
+      <optgroup label="Numbers">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </optgroup>
+      <optgroup label="Roman Numerals">
+        <option value="I" disabled>I</option>
+        <option value="II" disabled>II</option>
+        <option value="III" disabled>III</option>
+      </optgroup>
     </select>
     <hr />
     <select>
+      <option></option>
+      <optgroup label="Numbers">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </optgroup>
+      <optgroup label="Roman Numerals">
+        <option value="I" disabled>I</option>
+        <option value="II" disabled>II</option>
+        <option value="III" disabled>III</option>
+      </optgroup>
+    </select>
+    <hr />
+    <select multiple>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="4">Four</option>
+      <option value="5">Five</option>
+      <option value="6">Six</option>
+      <option value="7">Seven</option>
+      <option value="8">Eight</option>
+      <option value="9">Nine</option>
+    </select>
+    <hr />
+    <select multiple>
+      <option></option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+      <option value="4">Four</option>
+      <option value="5">Five</option>
+      <option value="6">Six</option>
+      <option value="7">Seven</option>
+      <option value="8">Eight</option>
+      <option value="9">Nine</option>
+    </select>
+    <hr />
+    <select multiple>
+      <optgroup label="Numbers">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </optgroup>
+      <optgroup label="Roman Numerals">
+        <option value="I" disabled>I</option>
+        <option value="II" disabled>II</option>
+        <option value="III" disabled>III</option>
+      </optgroup>
+    </select>
+    <hr />
+    <select multiple>
+      <option></option>
       <optgroup label="Numbers">
         <option value="1">One</option>
         <option value="2">Two</option>

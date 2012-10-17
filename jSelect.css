@@ -3,6 +3,10 @@
   text-decoration: none;
 }
 
+.jSelect .disabled {
+  color: #999 !important;
+}
+
 .jSelect.rounded,
 .jSelect .rounded {
   border-radius: 4px;
@@ -65,8 +69,8 @@
 
 .jSelect.container {
   z-index: 1;
-  cursor: text;
   display: block;
+  padding: 3px 0 0 3px;
   background: #fff;
   background: -o-linear-gradient(top, #fff 50%, #eee 100%);
   background: -ms-linear-gradient(top, #fff 50%, #eee 100%);
@@ -84,23 +88,15 @@
   background-color: #fff;
 }
 
-.jSelect.container > span {
-  margin: 2px 5px;
-}
-
-.jSelect.container > span.placeholder {
-  color: #999;
-}
-
 .jSelect.container > b {
   top: 0;
   right: 0;
   width: 16px;
   height: 100%;
   cursor: pointer;
-  background: #fff;
   position: absolute;
   border-left: 1px solid #aaa;
+  background: #fff;
   background: -o-linear-gradient(top, #fff 0%, #ddd 100%);
   background: -ms-linear-gradient(top, #fff 0%, #ddd 100%);
   background: -moz-linear-gradient(top, #fff 0%, #ddd 100%);
@@ -110,7 +106,20 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#ddd',GradientType=0 );
 }
 
-.jSelect.container > abbr {
+.jSelect.container > b > abbr {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.jSelect.container > span {
+  padding: 0 5px;
+  cursor: default;
+  margin: 0 3px 3px 0;
+  display: inline-block;
+}
+
+.jSelect.container > span > abbr {
   top: 0;
   right: 16px;
   width: 16px;
@@ -120,14 +129,37 @@
   position: absolute;
 }
 
-.jSelect.container > b > abbr {
-  width: 100%;
-  height: 100%;
-  position: absolute;
+.jSelect.container > span.multiple {
+  position: relative;
+  padding-right: 16px;
+  border: 1px solid #aaa;
+  background: #fff;
+  background: -o-linear-gradient(top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background: -ms-linear-gradient(top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background: -moz-linear-gradient(top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background: linear-gradient(to bottom, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background: -webkit-linear-gradient(top, #fff 0%, #f3f3f3 50%, #ededed 51%, #fff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(50%, #f3f3f3), color-stop(51%, #ededed), color-stop(100%, #fff));
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 );
+}
+
+.jSelect.container > span.placeholder {
+  border: 0;
+  background: none;
+}
+
+.jSelect.container > span.multiple > abbr {
+  right: 0;
+}
+
+.jSelect.container > input {
+  border: 0;
+  outline: none;
+  display: none;
+  background: none;
 }
 
 .jSelect.container.open {
-  cursor: default;
   background: #eee;
   background: -o-linear-gradient(top, #eee 0%, #fff 100%);
   background: -ms-linear-gradient(top, #eee 0%, #fff 100%);
@@ -141,6 +173,14 @@
 .jSelect.container.open > b {
   background: none;
   border-left-style: none;
+}
+
+.jSelect.container.open > span.multiple {
+  display: none;
+}
+
+.jSelect.container.open > input {
+  display: inline-block;
 }
 
 .jSelect.options {
@@ -167,10 +207,6 @@
   cursor: pointer;
 }
 
-.jSelect.options li.disabled {
-  color: #999;
-}
-
 .jSelect.options li:hover {
   color: #fff;
   background: #499bea;
@@ -183,9 +219,18 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5',GradientType=0 );
 }
 
+.jSelect.options li.disabled {
+  cursor: default;
+}
+
+.jSelect.options li.disabled:hover {
+  color:#999;
+  background: none;
+}
+
 .jSelect.options li.group {
-  padding: 5;
   color: #666;
+  padding: 5px;
   cursor: default;
 }
 
